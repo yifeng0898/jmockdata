@@ -300,7 +300,7 @@ public class JmockDataTemplateDefault implements JmockDataTemplate {
         int len = RandomUtil.randomInteger(10);
         for (int i = 0; i < len; i++) {
             sb.append(JMockDataManager.getInstance().getConfig().getSeedString()[RandomUtil
-                    .randomInteger(JMockDataManager.getInstance().getConfig().getSeedString().length)]).append(" ");
+                    .randomInteger(JMockDataManager.getInstance().getConfig().getSeedString().length)]);
         }
         return sb.toString();
     }
